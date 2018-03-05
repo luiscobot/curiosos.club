@@ -41,10 +41,22 @@ body {
 	margin: 0;
 	font-family: 'Museo Sans 300', sans-serif;
 	font-size: 1rem;
-	color: #131313;
 }
 
-a { text-decoration: none; }
+a {
+	text-decoration: none;
+	color: #131313;
+	padding: 8px 12px;
+	border-radius: 6px;
+	transition: background-color .6s;
+}
+
+a:hover { background-color: #ddd; }
+
+.flecha { transition: color .2s; }
+
+a:hover .flecha { color: #ff5300; }
+
 
 @media (min-width: 640px) {
 
@@ -57,6 +69,8 @@ a { text-decoration: none; }
 	}
 
 	.invitacion { font-size: 1.2rem; }
+
+	a { padding: 12px 16px; }
 }
 
 @media (min-width: 960px) {
@@ -70,4 +84,6 @@ a { text-decoration: none; }
 	}
 
 	.invitacion { font-size: 1.4rem; }
+
+	a { padding: 16px 20px; }
 }
