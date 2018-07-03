@@ -48,6 +48,7 @@ a {
 	color: #131313;
 	padding: 8px 12px;
 	border-radius: 6px;
+	background-color: #eee;
 	transition: background-color .6s;
 }
 
