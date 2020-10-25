@@ -1,2 +1,0 @@
-# Redirect default Netlify subdomain to primary domain
-http://curiosos.netlify.com/* http://curiosos.club/:splat 301!
