@@ -1,8 +1,5 @@
-# Mac
+# mac
 .DS_Store
 
-# Nova
+# nova
 .nova
-
-# Vercel
-.vercel
