@@ -1,3 +1,6 @@
+/*	Reset.
+	========================================================================= */
+
 /*
 	1. Use a more-intuitive box-sizing model
 */
@@ -51,6 +54,9 @@ p, h1, h2, h3, h4, h5, h6 {
 	isolation: isolate;
 }
 
+/*	Main.
+	========================================================================= */
+
 @font-face {
 	font-family: 'Museo Sans 900';
 	src: url('font/museosans_900-webfont.woff2') format('woff2'),
@@ -73,71 +79,62 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding: 20px;
 }
 
-.logo { width: 80%; }
+.curiosos-logo {
+	width: 240px;
+}
 
-.eslogan {
+.curiosos-title {
+	width: 40%;
+	min-width: 160px;
+	max-width: 240px;
 	font-family: 'Museo Sans 300', sans-serif;
 	font-size: 1.2rem;
+	font-weight: 300;
+	line-height: 1.5rem;
 	text-align: center;
 	margin-top: 2.4rem;
 	margin-bottom: 1.2rem;
-	color: #131313;
+	color: hsl(0, 0%, 8%);
 }
 
-.eslogan .fuerza { font-family: 'Museo Sans 900', sans-serif; }
+.curiosos-title span {
+	color: hsl(19, 100%, 50%);
+}
 
-.eslogan .punto { color: #ff5300; }
-
-.invitacion {
-	margin: 0;
+.curiosos-cta {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-family: 'Museo Sans 300', sans-serif;
+	font-weight: 300;
 	font-size: 1rem;
-}
-
-a {
+	line-height: 1rem;
 	text-decoration: none;
-	color: #131313;
-	padding: 8px 12px;
+	color: hsl(0, 0%, 8%);
+	padding: 10px;
 	border-radius: 6px;
-	background-color: #eee;
+	background-color: hsl(0, 0%, 93%);
 	transition: background-color .6s;
 }
 
-a:hover { background-color: #ddd; }
-
-.flecha { transition: color .2s; }
-
-a:hover .flecha { color: #ff5300; }
-
-
-@media (min-width: 640px) {
-
-	.logo { width: 60%; }
-
-	.eslogan {
-		font-size: 1.6rem;
-		margin-top: 3.2rem;
-		margin-bottom: 1.6rem;
-	}
-
-	.invitacion { font-size: 1.2rem; }
-
-	a { padding: 12px 16px; }
+.curiosos-cta:hover {
+	background-color: hsl(0, 0%, 87%);
 }
 
-@media (min-width: 960px) {
+.curiosos-cta-icon {
+	display: inline-block;
+	width: 20px;
+	margin-left: 2px;
+	transition: color .6s;
+}
 
-	.logo { width: 40%; }
+.curiosos-cta-icon svg {
+	width: 100%;
+}
 
-	.eslogan {
-		font-size: 2rem;
-		margin-top: 4rem;
-		margin-bottom: 2rem;
-	}
-
-	.invitacion { font-size: 1.4rem; }
-
-	a { padding: 16px 20px; }
+.curiosos-cta:hover .curiosos-cta-icon {
+	color: hsl(19, 100%, 50%);
 }
