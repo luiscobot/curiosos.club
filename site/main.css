@@ -74,11 +74,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-	height: 100vh;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 	justify-content: center;
-	align-items: center;
 	padding: 20px;
 }
 
@@ -87,17 +87,17 @@ body {
 }
 
 .curiosos-title {
-	width: 40%;
-	min-width: 160px;
-	max-width: 240px;
+	color: hsl(0, 0%, 8%);
 	font-family: 'Museo Sans 300', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 300;
 	line-height: 1.5rem;
-	text-align: center;
-	margin-top: 2.4rem;
 	margin-bottom: 1.2rem;
-	color: hsl(0, 0%, 8%);
+	margin-top: 2.4rem;
+	max-width: 240px;
+	min-width: 160px;
+	text-align: center;
+	width: 40%;
 }
 
 .curiosos-title span {
@@ -105,18 +105,18 @@ body {
 }
 
 .curiosos-cta {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	font-family: 'Museo Sans 300', sans-serif;
-	font-weight: 300;
-	font-size: 1rem;
-	line-height: 1rem;
-	text-decoration: none;
-	color: hsl(0, 0%, 8%);
-	padding: 10px;
-	border-radius: 6px;
 	background-color: hsl(0, 0%, 93%);
+	border-radius: 6px;
+	color: hsl(0, 0%, 8%);
+	display: flex;
+	font-family: 'Museo Sans 300', sans-serif;
+	font-size: 1rem;
+	font-weight: 300;
+	justify-content: center;
+	line-height: 1rem;
+	padding: 10px;
+	text-decoration: none;
 	transition: background-color .6s;
 }
 
@@ -126,9 +126,9 @@ body {
 
 .curiosos-cta-icon {
 	display: inline-block;
-	width: 20px;
 	margin-left: 2px;
 	transition: color .6s;
+	width: 20px;
 }
 
 .curiosos-cta-icon svg {
