@@ -122,7 +122,7 @@ body {
 }
 
 .curiosos-cta:hover {
-	background-color: hsl(0, 0%, 87%);
+	color: hsl(19, 100%, 50%);
 }
 
 .curiosos-cta-icon {
@@ -134,10 +134,11 @@ body {
 
 .curiosos-cta-icon svg {
 	width: 100%;
+	transition: transform .25s;
 }
 
-.curiosos-cta:hover .curiosos-cta-icon {
-	color: hsl(19, 100%, 50%);
+.curiosos-cta:hover svg {
+	transform: translateX(2px);
 }
 
 /*	Builder Badge.
