@@ -138,3 +138,31 @@ body {
 .curiosos-cta:hover .curiosos-cta-icon {
 	color: hsl(19, 100%, 50%);
 }
+
+/*	Builder Badge.
+	========================================================================= */
+
+.builder-badge {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Museo Sans 300', sans-serif;
+	font-weight: 300;
+	font-size: .8rem;
+	line-height: .8rem;
+	color: hsl(0, 0%, 0%);
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px hsla(0, 0%, 0%, .1), 0 1px 3px hsla(0, 0%, 0%, .1);
+}
+
+.builder-badge svg {
+	width: 20px;
+	height: 20px;
+	margin-right: 2.5px;
+	fill: hsl(208, 100%, 50%);
+}
