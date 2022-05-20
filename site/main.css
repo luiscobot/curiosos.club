@@ -54,6 +54,23 @@ p, h1, h2, h3, h4, h5, h6 {
 	isolation: isolate;
 }
 
+/*	Variables.
+	========================================================================= */
+
+:root {
+	--body-bg: hsl(0, 100%, 100%);
+	--title-color: hsl(0, 0%, 8%);
+	--logo-color: hsl(0, 0%, 8%);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--body-bg: hsl(0, 0%, 0%);
+		--title-color: hsl(0, 0%, 92%);
+		--logo-color: hsl(0, 0%, 92%);
+	}
+}
+
 /*	Main.
 	========================================================================= */
 
@@ -80,15 +97,19 @@ body {
 	height: 100vh;
 	justify-content: center;
 	padding: 20px;
-	background-color: hsl(0, 100%, 100%);
+	background-color: var(--body-bg);
 }
 
 .curiosos-logo {
 	width: 240px;
 }
 
+.curiosos-logo-name {
+	fill: var(--logo-color);
+}
+
 .curiosos-title {
-	color: hsl(0, 0%, 8%);
+	color: var(--title-color);
 	font-family: 'Museo Sans 300', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 300;
