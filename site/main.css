@@ -77,7 +77,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
 	font-family: 'Museo Sans 900';
 	src: url('font/museosans_900-webfont.woff2') format('woff2'),
-			 url('font/museosans_900-webfont.woff') format('woff');
+		 url('font/museosans_900-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -85,7 +85,7 @@ p, h1, h2, h3, h4, h5, h6 {
 @font-face {
 	font-family: 'Museo Sans 300';
 	src: url('font/museosans-300-webfont.woff2') format('woff2'),
-			 url('font/museosans-300-webfont.woff') format('woff');
+		 url('font/museosans-300-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
